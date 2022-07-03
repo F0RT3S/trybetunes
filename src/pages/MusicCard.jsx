@@ -25,7 +25,7 @@ class MusicCard extends Component {
   }
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     const { trackName, previewUrl, trackId } = this.props;
     const { loading, favorited } = this.state;
     return (
@@ -51,14 +51,13 @@ class MusicCard extends Component {
                   type="checkbox"
                   id="favorite"
                   onClick={ this.favoriteSong }
-                  checked={ favorited }
+                  defaultChecked={ favorited }
                 />
                 Favorita
               </label>
             </div>
           )
         }
-
       </div>
     );
   }
