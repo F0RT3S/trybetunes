@@ -28,7 +28,7 @@ class Search extends Component {
       loading: true,
     });
     const response = await searchAlbumsAPI(artistNameInput);
-    console.log(response);
+    // console.log(response);
     this.setState({
       artistNameInput: '',
       loading: false,
